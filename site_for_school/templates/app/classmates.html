@@ -1,0 +1,30 @@
+{% extends 'app/base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>сайт нашего класса</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    {% block content %}
+
+        {% for i in classmates %}
+            <div class="ellipse" style = 'top:{{ i.position.ellipsey }}px; left:{{ i.position.ellipsex }}px'></div>
+            <div class = 'fonts'>
+                <div style = 'position:absolute;top:{{ i.position.namey.namey }}px; left:{{ i.position.namex }}px'>
+                    {{ i.object.name }}
+                </div>
+                <div style = 'position:absolute;top:{{ i.position.namey.surnamey }}px; left:{{ i.position.namex }}px'>
+                    {{ i.object.surname }}
+                </div>
+                <div style = 'position:absolute;top:{{ i.position.namey.birthdayy }}px; left:{{ i.position.namex }}px'>
+                    {{ i.object.birthday }}
+                </div>
+            </div>
+        {% endfor %}
+
+    {% endblock %}
+</body>
+</html>

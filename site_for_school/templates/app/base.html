@@ -1,0 +1,78 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="{% static 'css/styles.css' %}">
+	<meta charset="UTF-8">
+	<title>сайт нашего класса</title>
+</head>
+<body>
+	{% block title %}
+	<div id = 'menu'>
+		<div id="rect2"></div>
+		<div style = 'position: absolute;font-family: Roboto;font-style: normal;font-weight: 200;font-size: 250%;line-height: 56px;text-align: center;color: #EEE; padding:13px;'>7.3</div>
+		<a class="main allText" style = 'left:200px; top:15px; text-decoration: none;' href = "{% url 'index' %}">главная</a>
+		<a class="In_mainclasmates allText" style = 'left: 550px; top: 15px; text-decoration: none;' href = "{% url 'classmates' %}">ученики</a>
+		<a href="{% url 'teachers' %}" class="teachers allText" style = 'text-decoration:none; top:15px; left:915px;'>учителя</a>
+	</div>
+	{% endblock %}
+	{% block content %}
+	<div id = 'in' style = 'display: block; top:150px; left:75px;'>
+		<div id="rect3"><img src="{% static 'css/imgs/class.jpg' %}" alt="" style = 'width:447px;'></div>
+		<div id = 'in_text'>наш класс</div>
+		<div id = 'rect4'></div>
+	</div>
+	<div id = 'classmates'>ученики</div>
+	<div id="rect5"></div>
+	<div>
+		<div class = 'ellipse'></div>
+		<div class = 't' style = 'position: absolute;width: 93px;height: 56px;left: 100px;top: 800px;font-family: Roboto, Arial;font-style: normal;font-weight: 200;font-size: 2em;line-height: 28px;text-align: center;color: #333;'>{{ 1random_people.surname }} {{ 1random_people.name }}</div>
+	</div>
+	<div>
+		<div class = 'ellipse' style = 'left: 590px;'></div>
+		<div class = 't' style = 'position: absolute;width: 93px;height: 56px;left: 630px;top: 800px;font-family: Roboto, Arial;font-style: normal;font-weight: 200;font-size: 2em;line-height: 28px;text-align: center;color: #333;'>{{ 0random_people.surname }} {{ 0random_people.name }}</div>
+	</div>
+	<div>
+		<div class = 'ellipse' style = 'left: 1070px;'></div>
+		<div class = 't' style = 'position: absolute;width: 93px;height: 56px;left: 1113px;top: 800px;font-family: Roboto, Arial;font-style: normal;font-weight: 200;font-size: 2em;line-height: 28px;text-align: center;color: #333;'>{{ 2random_people.surname }} {{ 2random_people.name }}</div>
+	</div>
+
+
+
+	<div>
+		<div class = 'ellipse' style = 'top:886px;'></div>
+		<div class = 't' style = 'position: absolute;width: 93px;height: 56px;left: 110px;top: 1130.04px;font-family: Roboto, Arial;font-style: normal;font-weight: 200;font-size: 2em;line-height: 28px;text-align: center;color: #333;'>{{ 3random_people.surname }} {{ 3random_people.name }}</div>
+	</div>
+	<div>
+		<div class = 'ellipse' style = 'left: 590px; top:886px;'></div>
+		<div class = 't' style = 'position: absolute;width: 93px;height: 56px;left: 625px;top: 1130.04px;font-family: Roboto, Arial;font-style: normal;font-weight: 200;font-size: 2em;line-height: 28px;text-align: center;color: #333;'>{{ 4random_people.surname }} {{ 4random_people.name }}</div>
+	</div>
+	<div>
+		<div class = 'ellipse' style = 'left: 1070px; top:886px;'></div>
+		<div class = 't' style = 'position: absolute;width: 93px;height: 56px;left: 1113px;top: 1130.04px;font-family: Roboto, Arial;font-style: normal;font-weight: 200;font-size: 2em;line-height: 28px;text-align: center;color: #333;'>{{ 5random_people.surname }} {{ 5random_people.name }}</div>
+	</div>
+
+
+
+
+	<div class = 'teahers_font' style = 'top:1248.3px; left:470px;'>учителя</div>
+	<div id="rect7"></div>
+
+		<div>
+		<div class = 'ellipse' style = 'top:1445.4px;'></div>
+		<div class = 't' style = 'position: absolute;width: 93px;height: 56px;left: 100px;top: 1688.49px;font-family: Roboto, Arial;font-style: normal;font-weight: 200;font-size: 2em;line-height: 28px;text-align: center;color: #333;'>{{ 0random_teachers }}</div>
+	</div>
+	<div>
+		<div class = 'ellipse' style = 'left: 570px; top:1445.4px;'></div>
+		<div class = 't' style = 'position: absolute;width: 93px;height: 56px;left: 620px;top: 1688.49px;font-family: Roboto, Arial;font-style: normal;font-weight: 200;font-size: 2em;line-height: 28px;text-align: center;color: #333;'>{{ 1random_teachers }}</div>
+	</div>
+	</div>
+	<div>
+		<div class = 'ellipse' style = 'left: 1050px; top:1445.4px;'></div>
+		<div class = 't' style = 'position: absolute;width: 93px;height: 56px;left: 1100px;top: 1688.49px;font-family: Roboto, Arial;font-style: normal;font-weight: 200;font-size: 2em;line-height: 28px;text-align: center;color: #333;'>{{ 2random_teachers }}</div>
+	</div>
+	{% endblock %}
+
+</body>
+</html>

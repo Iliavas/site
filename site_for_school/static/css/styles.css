@@ -1,0 +1,243 @@
+/* ВСТУПЛЕНИЕ */
+#in{
+	border-radius: 4px;
+	margin-left: 2%;
+	border: 1px solid #C4C4C4;
+	position: absolute;
+	width: 1000px;
+	height: 298px;
+}
+
+
+#in_text{
+	display: inline-block;
+	width: 500px;
+	height: 250px;
+	position: absolute;
+	text-align: center;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 200;
+	font-size: 3em;
+	line-height: 56px;
+	top: 90px;
+	left: 500px;
+
+	color: #555;
+}
+
+/* Rectangle 3 */
+#rect3{
+	display: inline-block;
+	width: 60%;
+	height: 100%;
+}
+
+/* Rectangle 4 */
+#rect4{
+	position: absolute;
+	width: 300px;
+	height: 5px;
+
+	top: 160px;
+	left: 600px;
+
+	radius: 3px;
+
+	background: #C4C4C4;
+}
+
+/* УЧЕНИКИ */
+#classmates{
+	position: absolute;
+	width: 331px;
+	height: 84px;
+
+	top: 450px;
+	left: 490px;
+
+	font-family: Roboto, Arial;
+	font-style: normal;
+	font-weight: 200;
+	font-size: 72px;
+	line-height: 84px;
+	text-align: center;
+
+	color: #444;
+}
+
+/* Rectangle 5 */
+#rect5{
+	position: absolute;
+	width: 330px;
+	height: 5px;
+
+	top: 535px;
+	left: 490px;
+
+	background: #555;
+}
+
+
+/* ТУДУДУ ЛЯЛЯЛЯ */
+
+.t{
+	position: absolute;
+	width: 93px;
+	height: 56px;
+
+	left: 25%;
+	top: 95%;
+
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 200;
+	font-size: 24px;
+	line-height: 28px;
+	text-align: center;
+
+	color: #000000;
+}
+
+
+/* Ellipse 1 */
+.ellipse{
+	display: inline-block;
+	position: absolute;
+
+	left: 63px;
+	top: 580px;
+	width: 202px;
+	height: 202px;
+	border-radius: 50%;
+	background: #C4C4C4;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+/* УЧИТЕЛЯ */
+.teahers_font{
+	position: absolute;
+	width: 319px;
+	height: 84px;
+
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 200;
+	font-size: 72px;
+	line-height: 84px;
+	text-align: center;
+	left: 40%;
+	color: #333;
+}
+
+
+/* Rectangle 7 */
+#rect7{
+	position: absolute;
+	width: 391px;
+	height: 4px;
+
+	top: 1333.71px;
+	left: 429px;
+
+	background: #555;
+}
+
+
+
+
+
+
+/* МЕНЮ */
+#menu{
+	position: absolute;
+	width: 1300px;
+	height: 70px;
+}
+
+
+/* Rectangle 2 */
+#rect2{
+	border-radius: 3px;
+	position: absolute;
+	width: 100%;
+	height: 90%;
+
+	background: #111;
+}
+
+/* 7.3 */
+.73{
+	position: absolute;
+	width: 63px;
+	height: 56px;
+
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 200;
+	font-size: 48px;
+	line-height: 56px;
+	text-align: center;
+
+	color: #FFFFFF;
+}
+
+
+
+
+/* ГЛАВНАЯ */
+.main{
+	position: absolute;
+	width: 13%;
+	height: 7%;
+
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 220%;
+	line-height: 42px;
+	text-align: center;
+	display: inline-block;
+	color: #EEE;
+}
+
+
+/* УЧЕНИКИ */
+.In_mainclasmates{
+	position: absolute;
+	width: 13%;
+	height: 7%;
+
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 220%;
+	line-height: 42px;
+	text-align: center;
+	display: inline-block;
+	color: #EEE;
+}
+
+
+/* УЧИТЕЛЯ */
+.teachers{
+	position: absolute;
+	width: 13%;
+	height: 7%;
+	display: inline-block;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 220%;
+	line-height: 42px;
+	text-align: center;
+
+	color: #EEE;
+}
+
+
+.fonts{
+    font-size:20px;
+    font-family:Roboto, Arial;
+}

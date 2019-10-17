@@ -1,0 +1,27 @@
+{% extends 'app/base.html' %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>сайт нашего класса</title>
+</head>
+<body>
+    {% block content %}
+        {% for i in teachers %}
+             <div class="ellipse" style = 'top:{{ i.position.ellipsey }}px; left:{{ i.position.ellipsex }}px'></div>
+            <div class = 'fonts'>
+                <div style = 'position:absolute;top:{{ i.position.namey.namey }}px; left:{{ i.position.namex }}px'>
+                    {{ i.object.name }}
+                </div>
+                <div style = 'position:absolute;top:{{ i.position.namey.surnamey }}px; left:{{ i.position.namex }}px'>
+                    {{ i.object.middle_name }}
+                </div>
+                <div style = 'background-color:#DDD;position:absolute;top:{{ i.position.namey.birthdayy }}px; left:{{ i.position.namex }}px; width: 200px;'>
+                    {{ i.object.description }}
+                </div>
+            </div>
+        {% endfor %}
+    {% endblock %}
+</body>
+</html>
